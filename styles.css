@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    min-height: 90vh;
+    margin: auto;
+}
+#cardapio {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  min-height: calc(100vh - 300px);
+}
+ul{
+    margin: auto;
+    padding: 0;
+}
+#cardapio > li {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-weight: bolder;
+  border: 1px solid black;
+}
+#cardapio > li > h2, h3, p {
+  display: none;
+}
+h1{
+    font-size: 3vh;
+    text-shadow: black 5px 5px 10px;
+}
+#cardapio > li:hover h1{
+    text-shadow: none;
+}
+#cardapio > li:hover {
+  transition: 0.3s;
+  background-color: whitesmoke;
+  color: black;
+  box-shadow: white 10px 10px 50px;
+}
+#cardapio > li:not(:hover) {
+  transition: 0.3s;
+  background-color: brown;
+  color: white;
+}
+form {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 98vw;
+  background-color: black;
+  padding: 10px;
+  margin-top: 50px;
+}
+form input{
+    width: 250px;
+    height: 40px;
+    margin: 5px;
+    font-size: 2vh;
+}
+button {
+    height: 45px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    border: 2px solid blueviolet;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bolder;
+    margin: 5px;
+}
+button:hover{
+    transition: 0.3s;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+#background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-image: url("background.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.9;
+  border: 1px transparent;
+}
+#div-busca{
+    height: 100px;
+    background-color: black;
+    margin-bottom: 50px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vh;
+    font-weight: bolder;
+}
+#div-busca > input{
+    margin: 10px;
+    font-size: 2vh;
+}

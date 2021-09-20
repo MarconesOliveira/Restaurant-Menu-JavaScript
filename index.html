@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cardápio</title>
+</head>
+<body>
+    <div id="background"></div>
+    <div id="div-busca">
+        <label for="search">Buscar no Cardápio</label>
+        <input type="search" name="q" id="search" placeholder="Buscar...">
+    </div>
+    <div id="div-cardapio">
+        <ul id="cardapio"></ul>
+    </div>
+    <div>
+        <form id="inserirPrato">
+            <input type="text" name="" id="prato" placeholder="Nome do Prato" required>
+            <input type="text" name="" id="ingredientes" placeholder="Ingredientes" required>
+            <input type="text" name="" id="descricao" placeholder="Descrição - Opcional">
+            <input type="number" min="0.00" max="10000.00" step="0.01" name="" id="preco" placeholder="Preço" required>
+            <button type="submit">Criar novo Prato</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
